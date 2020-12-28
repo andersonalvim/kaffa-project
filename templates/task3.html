@@ -10,6 +10,50 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" language="javascript">
+        function valida_form(){
+            if(document.getElementById("coordx1").value == ""){
+                alert('Please, fill coordinate x of first rectagle field');
+                document.getElementById("coordx1").focus();
+                return false
+            }
+            if(document.getElementById("coordy1").value == ""){
+                alert('Please, fill coordinate y of first rectagle field');
+                document.getElementById("coordy1").focus();
+                return false
+            }
+            if(document.getElementById("width1").value == ""){
+                alert('Please, fill width of first rectagle field');
+                document.getElementById("width1").focus();
+                return false
+            }
+            if(document.getElementById("height1").value == ""){
+                alert('Please, fill height of first rectagle field');
+                document.getElementById("height1").focus();
+                return false
+            }
+            if(document.getElementById("coordx2").value == ""){
+                alert('Please, fill coordinate x of second rectagle field');
+                document.getElementById("coordx2").focus();
+                return false
+            }
+            if(document.getElementById("coordy2").value == ""){
+                alert('Please, fill coordinate y of second rectagle field');
+                document.getElementById("coordy2").focus();
+                return false
+            }
+            if(document.getElementById("width2").value == ""){
+                alert('Please, fill width of second rectagle field');
+                document.getElementById("width2").focus();
+                return false
+            }
+            if(document.getElementById("height2").value == ""){
+                alert('Please, fill heigth of second rectagle field');
+                document.getElementById("height2").focus();
+                return false
+            }
+        }
+    </script>
     <title>Task 3</title>
 </head>
 <body>
@@ -17,41 +61,41 @@
         <nav>
         <h3>Task 3 - Test if two rectangles intersect</h3>
     </nav>
-    <form action="/task3.html" method="post">
+    <form action="/task3.html" method="post" onsubmit="return valida_form(this)">
         <div style="width:50%;background-color:SkyBlue;">
             <div>
                 <label>Enter with coordinate x of first rectangle</label>
-                <input type="text" name="coordx1">
+                <input type="text" name="coordx1" id="coordx1">
             </div>
             <div>
                 <label>Enter with coordinate y of first rectangle</label>
-                <input type="text" name="coordy1">
+                <input type="text" name="coordy1" id="coordy1">
             </div>
             <div>
                 <label>Enter with width of first rectangle</label>
-                <input type="text" name="width1">
+                <input type="text" name="width1" id="width1">
             </div>
             <div>
                 <label>Enter with height of first rectangle</label>
-                <input type="text" name="height1">
+                <input type="text" name="height1" id="height1">
             </div>
         </div>
         <div style="width:50%;background-color:MediumAquamarine;">
             <div>
                 <label>Enter with coordinate x of second rectangle</label>
-                <input type="text" name="coordx2">
+                <input type="text" name="coordx2" id="coordx2">
             </div>
             <div>
                 <label>Enter with coordinate y of second rectangle</label>
-                <input type="text" name="coordy2">
+                <input type="text" name="coordy2" id="coordy2">
             </div>
             <div>
                 <label>Enter with width of second rectangle</label>
-                <input type="text" name="width2">
+                <input type="text" name="width2" id="width2">
             </div>
             <div>
                 <label>Enter with height of second rectangle</label>
-                <input type="text" name="height2">
+                <input type="text" name="height2" id="height2">
             </div>
         </div>
         <button type="submit" name="submit" value="submit">Submit</button>
