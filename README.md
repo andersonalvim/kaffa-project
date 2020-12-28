@@ -83,5 +83,5 @@ see the LICENSE.md file for details
 
 ## Acknowledgments
 
-- I am grateful to the RH's professionals at Kaffa for offering me the opportunity 
+- I am grateful to the RH's staff at Kaffa for offering me the opportunity 
 to participate in this selection process.
