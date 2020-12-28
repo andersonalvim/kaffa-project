@@ -1,8 +1,14 @@
 import re
 
+def validaCnpjApenasNumeros(cnpj):
+    if len(cnpj) == 14 and cnpj.isdigit():
+        return True
+    else:
+        return False
+
 def validaCnpj(cnpj):
     expr = re.compile('\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}')
-    if expr.search(cnpj):
+    if expr.search(cnpj) or validaCnpjApenasNumeros(cnpj):
         return 'It is a valide CNPJ'
     else:
         return 'It is not a valide CNPJ'
