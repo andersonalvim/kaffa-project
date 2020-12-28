@@ -30,7 +30,8 @@ webservices.
 
 ## Installation
 
-Use the package manager [pip],
+Use the package manager [pip]
+
 (https://pypi.org/project/Pyrebase/) to install pyrebase
 
 (https://palletsprojects.com/p/flask/) to install flask
