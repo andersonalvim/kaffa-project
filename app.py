@@ -102,10 +102,13 @@ def basic6():
     request = requests.get('http://worldclockapi.com/api/json/utc/now')
     address_data = request.json()
     currentTime = address_data['currentDateTime']
+    currentTime = currentTime[11:16]
+    currentDate = address_data['currentDateTime']
+    currentDate = currentDate[8:10]+"/"+currentDate[5:7]+"/"+currentDate[0:4]
     dayOfTheWeek = address_data['dayOfTheWeek']
 
     if currentTime:
-        return render_template("task6.html", x=currentTime, y=dayOfTheWeek)
+        return render_template("task6.html", x=currentTime, y=dayOfTheWeek, z=currentDate)
     return render_template("task6.html")
 
 @app.route("/task7.html", methods=["GET","POST"])
