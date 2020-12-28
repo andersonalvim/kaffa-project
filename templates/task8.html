@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <title>Task 8</title>
+</head>
+<body>
+    <div style="margin-left:50px;margin-top:50px;">
+        <nav>
+        <h3>Task 8 - Entity Relationship Diagram - Simple Order Manager</h3>
+    </nav>
+    <img style="margin-bottom:50px;" src="{{ url_for('static', filename='img1.png') }}" />
+        <h4>SQL Query</h4>
+        <p>SELECT numero_items, idCompra, valor_total FROM pedido_compra</p>
+        <p>SELECT * FROM pedido_compra</p>
+        <h4>Primary Keys</h4>
+        <ul>
+            <li>idCompra</li>
+            <li>idCliente</li>
+            <li>CPF</li>
+            <li>CNPJ</li>
+            <li>idProduto</li>
+            <li>idEstoque</li>
+        </ul>
+    <a href="{{ url_for('index') }}">Go back to home</a>
+    </div>
+</body>
+</html>

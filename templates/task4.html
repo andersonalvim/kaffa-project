@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <title>Task 4</title>
+</head>
+<body>
+    <div style="margin-left:50px;margin-top:50px;">
+        <nav>
+        <h3>Task 4 - Compute area of intersection between two rectangles</h3>
+    </nav>
+    <form action="/task4.html" method="post">
+        <div style="width:50%;background-color:SkyBlue;">
+            <div>
+                <label>Enter with coordinate x of first rectangle</label>
+                <input type="text" name="coordx1">
+            </div>
+            <div>
+                <label>Enter with coordinate y of first rectangle</label>
+                <input type="text" name="coordy1">
+            </div>
+            <div>
+                <label>Enter with width of first rectangle</label>
+                <input type="text" name="width1">
+            </div>
+            <div>
+                <label>Enter with height of first rectangle</label>
+                <input type="text" name="height1">
+            </div>
+        </div>
+        <div style="width:50%;background-color:MediumAquamarine;">
+            <div>
+                <label>Enter with coordinate x of second rectangle</label>
+                <input type="text" name="coordx2">
+            </div>
+            <div>
+                <label>Enter with coordinate y of second rectangle</label>
+                <input type="text" name="coordy2">
+            </div>
+            <div>
+                <label>Enter with width of second rectangle</label>
+                <input type="text" name="width2">
+            </div>
+            <div>
+                <label>Enter with height of second rectangle</label>
+                <input type="text" name="height2">
+            </div>
+        </div>
+        <button type="submit" name="submit" value="submit">Submit</button>
+    </form>
+    {% if x %}
+        {{x}}
+    {% endif %}
+    <a href="{{ url_for('index') }}">Go back to home</a>
+    </div>
+</body>
+</html>
