@@ -57,7 +57,7 @@ Open the browser and enter the project's homepage at:
 http://127.0.0.1:5000
 ```
 
-##Built With
+## Built With
 
 [Python](https://www.python.org) - The language used for the development of this project
 
@@ -71,7 +71,7 @@ http://127.0.0.1:5000
 
 [Requests](https://requests.readthedocs.io/en/master/) - Requests is HTTP library for Python
 
-##Author
+## Author
 
 - Anderson Alvim - From start to finish
 
@@ -80,7 +80,7 @@ http://127.0.0.1:5000
 This project is licensed under the Anderson Alvim License - 
 see the LICENSE.md file for details
 
-##Acknowledgments
+## Acknowledgments
 
 - I am grateful to the RH's professionals at Kaffa for offering me the opportunity 
 to participate in this selection process.
