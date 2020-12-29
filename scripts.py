@@ -10,9 +10,9 @@ def validaCnpjApenasNumeros(cnpj):
 def validaCnpj(cnpj):
     expr = re.compile('\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}')
     if expr.search(cnpj) or validaCnpjApenasNumeros(cnpj):
-        return 'It is a valide CNPJ'
+        return 'It is a valid CNPJ'
     else:
-        return 'It is not a valide CNPJ'
+        return 'It is not a valid CNPJ'
 
 def validaCnpj1(cnpj):
     aux = cnpj.split('-')
