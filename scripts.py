@@ -1,4 +1,5 @@
 import re
+import json
 
 def validaCnpjApenasNumeros(cnpj):
     if len(cnpj) == 14 and cnpj.isdigit():
@@ -67,3 +68,7 @@ def checkAndComputeIntersectionTwoRectangles(x1,y1,width1,height1,x2,y2,width2,h
         return [True, intersection]
     else:
         return [False, 0]
+
+def geraJson(dados):
+    dados_json = json.dumps(dados)
+    return dados_json

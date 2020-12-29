@@ -115,8 +115,9 @@ def basic6():
 def basic7():
     request = requests.get('http://worldclockapi.com/api/json/utc/now')
     address_data = request.json()
-    if address_data:
-        return render_template('task7.html', x=address_data)
+    dados_json = scripts.geraJson(address_data)
+    if dados_json:
+        return render_template('task7.html', x=dados_json)
     return render_template("task7.html")
 
 @app.route("/task8.html", methods=["GET","POST"])
